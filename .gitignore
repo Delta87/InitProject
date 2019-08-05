@@ -3,3 +3,9 @@
 .idea/*
 out/*
 .gitignore
+!/.idea/vcs.xml
+!/.idea/encodings.xml
+!/.idea/description.html
+!/.idea/misc.xml
+!/.idea/modules.xml
+!/.idea/project-template.xml
