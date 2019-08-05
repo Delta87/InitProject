@@ -1,11 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/
-.idea/*
-out/*
-.gitignore
-!/.idea/vcs.xml
-!/.idea/encodings.xml
-!/.idea/description.html
-!/.idea/misc.xml
-!/.idea/modules.xml
-!/.idea/project-template.xml
+/.idea/vcs.xml
+/.idea/.gitignore
+/.idea/workspace.xml
+/.idea/encodings.xml
+/.idea/description.html
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/project-template.xml
+/out/
