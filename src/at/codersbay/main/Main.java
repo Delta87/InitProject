@@ -39,6 +39,12 @@ public class Main {
         System.out.println("Aufgabe 3: ");
         Strings.DisplayStringTask();
 
+        //Aufgabe 4
+        System.out.println(" ");
+        System.out.println("Aufgabe 4: ");
+        SimpleMath.showSimpleMath();
+
+
 
 
     }
