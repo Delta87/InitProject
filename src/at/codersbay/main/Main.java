@@ -15,7 +15,7 @@ public class Main {
         String ZeichenKette = "Das ist eine Zeichenkette!";
         double gleitKommazahl = 123.123d;
 
-        System.out.printf("Aufgabe 1: \n");
+        System.out.println("Aufgabe 1: ");
         System.out.println("Bool: " + status);
         System.out.println("Int: " + ganzZahl);
         System.out.println("String: " + ZeichenKette);
@@ -26,12 +26,20 @@ public class Main {
         int Wert1 = 20;
         int Wert2 = 2;
 
-        System.out.printf("\n");
-        System.out.printf("Aufgabe 2: \n");
+        System.out.println(" ");
+        System.out.println("Aufgabe 2:");
         Rechnen.addition(Wert1, Wert2);
         Rechnen.substraction(Wert1, Wert2);
         Rechnen.multiplication(Wert1, Wert2);
         Rechnen.divisision(Wert1, Wert2);
+
+
+        //Aufgabe 3
+        System.out.println(" ");
+        System.out.println("Aufgabe 3: ");
+        Strings.DisplayStringTask();
+
+
 
     }
 }
