@@ -24,7 +24,7 @@ public class Main {
 
         // Aufgabe 2
         int Wert1 = 10;
-        int Wert2 = 2;
+        int Wert2 = 3;
 
         System.out.printf("\n");
         System.out.printf("Aufgabe 2: \n");
