@@ -42,7 +42,7 @@ public class Rechnen {
 
 
     /**
-     * Berechnet das Ergebnis der Multiplikation.
+     * Berechnet das Ergebnis der Division.
      *
      * @param pZahl1 Die erste Zahl die verwendet wird
      * @param pZahl2 Die zweite Zahl die verwendet wird.
