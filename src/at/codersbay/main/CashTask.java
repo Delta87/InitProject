@@ -7,7 +7,7 @@ public class CashTask {
 
     public static void printCash()
     {
-        double Cash = 50.00d;
+        double Cash = 100.00d;
         double AllItems = 0.0d;
         double backvalue = 0.0d;
 
@@ -31,14 +31,15 @@ public class CashTask {
 
             for(String Key : ShopItems.keySet())
             {
-                System.out.println(ShopItems.get(Key).getItemName() + " | " + ShopItems.get(Key).getCount() + " * " + ShopItems.get(Key).getPrice() + " EUR | " + (Double.parseDouble(String.format("%s.00", ShopItems.get(Key).getCount())) * ShopItems.get(Key).getPrice()));
+                System.out.printf("%s | %s * %,.02f EUR | %,.02f EUR \n", ShopItems.get(Key).getItemName(), ShopItems.get(Key).getCount(), ShopItems.get(Key).getPrice(), Double.parseDouble(String.format("%s.00", ShopItems.get(Key).getCount())) * ShopItems.get(Key).getPrice());
             }
 
             System.out.println("-------------------------");
-            System.out.println("Gesammt: " + AllItems + " EUR");
-            System.out.println("Gegeben: " + Cash + " EUR");
+
+            System.out.printf("Gesammt: %,.02f EUR \n", AllItems);
+            System.out.printf("Gegeben: %,.02f EUR \n", Cash);
             System.out.println("-------------------------");
-            System.out.println("Retour: " + (Cash - AllItems)  + " EUR");
+            System.out.printf("Retour: %,.02f EUR \n", backvalue);
         }
         else
         {
