@@ -13,7 +13,7 @@ public class Main {
         boolean status = true;
         int ganzZahl = 10;
         String ZeichenKette = "Das ist eine Zeichenkette!";
-        double gleitKommazahl = 123.123;
+        double gleitKommazahl = 123.123d;
 
         System.out.printf("Aufgabe 1: \n");
         System.out.println("Bool: " + status);
@@ -32,8 +32,6 @@ public class Main {
         Rechnen.substraction(Wert1, Wert2);
         Rechnen.multiplication(Wert1, Wert2);
         Rechnen.divisision(Wert1, Wert2);
-
-
 
     }
 }
