@@ -1,53 +1,37 @@
 package at.codersbay.main;
 
-import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CashTask {
 
     public static void printCash()
     {
-
-
-
         double Cash = 50.00d;
         double AllItems = 0.0d;
         double backvalue = 0.0d;
 
+        Map<String, ShopItem> ShopItems = new HashMap<>();
+        ShopItems.put("Wurst", new ShopItem("Wurst", 1, 4.20d));
+        ShopItems.put("Käse", new ShopItem("Käse", 1, 2.30d));
+        ShopItems.put("Brot", new ShopItem("Brot", 1, 2.10d));
+        ShopItems.put("DVD", new ShopItem("DVD", 2, 12.00d));
 
-        String Items[][] = new String[4][];
-        Items[0] = new String[3];
-        Items[1] = new String[3];
-        Items[2] = new String[3];
-        Items[3] = new String[3];
 
-        Items[0][0] = "Wurst";
-        Items[0][1] = "1";
-        Items[0][2] = "4.20";
-
-        Items[1][0] = "Käse";
-        Items[1][1] = "1";
-        Items[1][2] = "2.30";
-
-        Items[2][0] = "Brot";
-        Items[2][1] = "1";
-        Items[2][2] = "2.10";
-
-        Items[3][0] = "DVD";
-        Items[3][1] = "2";
-        Items[3][2] = "12.00";
-
-        for (int i = 0; i < 4; i++)
+        for(String Key : ShopItems.keySet())
         {
-            AllItems = AllItems + (Double.parseDouble(Items[i][1]) * Double.parseDouble(Items[i][2]));
+            AllItems = AllItems + (Double.parseDouble(String.format("%s.00", ShopItems.get(Key).getCount())) * ShopItems.get(Key).getPrice());
         }
+
         backvalue = Cash - AllItems;
 
         if(backvalue >= 0.0d)
         {
             System.out.println("-------------------------");
-            for (int i = 0; i < 4; i++)
+
+            for(String Key : ShopItems.keySet())
             {
-                System.out.println(Items[i][0] + " | " + Items[i][1] + " x " + Items[i][2] + " EUR |  " + Double.parseDouble(Items[i][1]) * Double.parseDouble(Items[i][2]) + " EUR" );
+                System.out.println(ShopItems.get(Key).getItemName() + " | " + ShopItems.get(Key).getCount() + " * " + ShopItems.get(Key).getPrice() + " EUR | " + (Double.parseDouble(String.format("%s.00", ShopItems.get(Key).getCount())) * ShopItems.get(Key).getPrice()));
             }
 
             System.out.println("-------------------------");
