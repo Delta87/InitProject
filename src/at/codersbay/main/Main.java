@@ -45,7 +45,10 @@ public class Main {
         SimpleMath.showSimpleMath();
 
 
-
+        //Aufgabe 5
+        System.out.println(" ");
+        System.out.println("Aufgabe 5: ");
+        CashTask.printCash();
 
     }
 }
